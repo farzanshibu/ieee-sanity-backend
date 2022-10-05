@@ -7,6 +7,7 @@ export default () =>
 			S.documentTypeListItem("home"),
 			S.documentTypeListItem("events"),
 			S.documentTypeListItem("team"),
+			S.documentTypeListItem("achievement"),
 			S.documentTypeListItem("reportandstory"),
 			S.documentTypeListItem("gallery"),
 			S.documentTypeListItem("author"),

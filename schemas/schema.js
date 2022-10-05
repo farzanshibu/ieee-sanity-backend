@@ -15,6 +15,7 @@ import wow from "./wow";
 import blog from "./blog";
 import report from "./report";
 import events from "./events";
+import achievement from "./achievement";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -29,6 +30,7 @@ export default createSchema({
 		blog,
 		gallery,
 		home,
+		achievement,
 		report,
 		team,
 		events,
