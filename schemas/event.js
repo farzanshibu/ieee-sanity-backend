@@ -41,11 +41,6 @@ export default {
 			},
 		},
 		{
-			name: "shortDesignation",
-			title: "Short Designation",
-			type: "string",
-		},
-		{
 			name: "description",
 			title: "Description",
 			type: "blockContent",
