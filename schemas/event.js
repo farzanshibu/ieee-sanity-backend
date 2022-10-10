@@ -74,8 +74,25 @@ export default {
 		{
 			name: "date3",
 			title: "Late Date of event conductions",
-			type: "date",
+			type: "datetime",
 			hidden: (document) => !document.parent.date2,
+		},
+		{
+			name: "date4",
+			title: "Deadline",
+			type: "boolean",
+			description: "If Event has deadline",
+		},
+		{
+			name: "date5",
+			title: "Deadline of event",
+			type: "datetime",
+			hidden: (document) => !document.parent.date4,
+		},
+		{
+			name: "theme",
+			title: "Theme or Topic for Events",
+			type: "string",
 		},
 		{
 			name: "place",
@@ -130,11 +147,15 @@ export default {
 				{
 					type: "object",
 					fields: [
-						{ name: "contactName", type: "string", title: "Contact Name" },
 						{
-							name: "contactDesignation",
+							name: "contactName",
 							type: "string",
-							title: "Contact Designation",
+							title: "Contact Person Name",
+						},
+						{
+							name: "contactNumber",
+							type: "string",
+							title: "Contact Number",
 						},
 					],
 				},
